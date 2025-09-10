@@ -288,3 +288,12 @@ button {
     cursor: pointer;
     transition: .5s;
 }
+   @media (max-width: 428px) {
+      .cart {
+        width: 191px;
+            margin: 7px 4px;
+    }
+      .image-cart {
+        width: 174px;
+    }
+   }
