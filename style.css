@@ -265,8 +265,26 @@ footer {
 ;
     justify-content: space-around;
     align-items: center;
-    background: #f0f8ff;
+background-color: #fff;
     position: sticky;
     bottom: 0;
-    box-shadow: 6px 5px 12px 1px rgba(0, 0, 0, 0.5);
+
+}
+   @media (max-width: 475px) {
+    .cart {
+          width: 187px;
+    }
+        .image-cart {
+ width: 168px;
+    }
+   }
+button {
+    padding: 2px;
+    border: none;
+    background: #a837bd;
+    padding: 3px 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
 }
