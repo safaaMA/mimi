@@ -76,3 +76,12 @@ function dragEnd() {
 function getPositionX(event) {
   return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
 }
+ const input = document.getElementById('numInput');
+  function step(delta){
+    let val = Number(input.value) || 0;
+    input.value = val + delta;
+    if (input.min !== '') {
+      const min = Number(input.min);
+      if (!isNaN(min) && Number(input.value) < min) input.value = min;
+    }
+  }

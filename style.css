@@ -53,14 +53,15 @@ i.fa-solid.fa-cart-shopping , i.fa-solid.fa-magnifying-glass,i.fa-solid.fa-bars-
 i.fa-solid.fa-cart-shopping {
     color: #a939bc;
 }
-    .slider {
-      position: relative;
-      width: 95%;
-margin: 0 10px;
-      overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    }
+   .slider {
+    position: relative;
+    width: 95%;
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    height: 180px;
+}
 
     .slides {
       display: flex;
@@ -112,13 +113,12 @@ span.title-pro {
     border: 1px solid #00000029;
     border-radius: 6px;
     padding: 11px;
-    margin: 7px 14px;
+    margin: 7px 3px;
 }
 .action-cart {
-    display: flex
-;
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-direction: row-reverse;
 }
 
@@ -146,7 +146,7 @@ button:hover{
 }
 .image-cart {
     width: 231px;
-    border: 1px solid #00000014;
+ 
 }
 .price {
     display: flex
@@ -223,27 +223,25 @@ i.fa-solid.fa-arrow-down {
     color: #a837bd;
 }
 footer {
-    background: aliceblue;
+    background: #2f2f2f;
     text-align: -webkit-center;
 }
 .midea {
     background: #2f2f2f;
-    display: flex
-;
+    display: flex;
     align-items: center;
-    margin: 44px 0px;
+    margin: 44px 0 23px 0px;
     font-size: 21px;
- 
     justify-content: space-evenly;
     padding: 10px;
- 
 }
 .logo-foter {
     width: 284px;
         display: none;
 }
 .C {
-    color: #00000038;
+    color: #ffffff3b;
+    margin: 43px 0px 0px;
 }
  .but-nav {
     display: flex
@@ -271,29 +269,169 @@ background-color: #fff;
 
 }
    @media (max-width: 475px) {
-    .cart {
-          width: 187px;
-    }
+   .cart {
+    width: 207px;
+            font-size: 14px;
+}
         .image-cart {
  width: 168px;
     }
    }
-button {
+.button {
     padding: 2px;
     border: none;
     background: #a837bd;
-    padding: 3px 16px;
+    padding: 5px 16px;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
     transition: .5s;
 }
    @media (max-width: 428px) {
-      .cart {
-        width: 191px;
-            margin: 7px 4px;
+       .cart {
+           width: 191px;
+           margin: 7px 4px;
+           font-size: 13px;
+        }
+        .image-cart {
+            width: 174px;
+        }
+        p.des-cart {
+            color: #000000a8;
+            font-size: 11px;
+        }
     }
-      .image-cart {
-        width: 174px;
+    .off {
+        text-align: -webkit-left;
     }
-   }
+    h5 {
+        background: red;
+        width: 40px;
+        text-align: center;
+        border-radius: 6px;
+        color: #fff;
+    }
+    
+    
+    
+    .num-box {
+        width: 62px;
+        height: 36px;
+        border: 1px solid #d7d7d7;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+    }
+    .num-box input[type="number"] {
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        appearance: none;
+        
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 16px;
+        
+        padding-right: 48px;
+    }
+    
+    /* إخفاء الأسهم الافتراضية */
+    .num-box input::-webkit-inner-spin-button,
+    .num-box input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .spinner {
+        position: absolute;
+        top: 0;
+        right: -4px;
+        width: 31px;
+        height: 100%;
+        border-left: 1px solid #e6e6e6;
+        display: flex
+        ;
+        flex-direction: column;
+        background: #fafafa;
+    }
+    
+    .spinner button {
+        flex: 1;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        font-size: 10px;
+        color: #444;
+        line-height: 1;
+        margin: 0 -14px;
+    }
+    .spinner button:active { background: rgba(0,0,0,0.05); }
+    
+    
+    
+    @media (max-width: 361px) {
+    .cart {
+        width: 142px;
+ 
+    }
+        .image-cart {
+        width: 116px;
+    }
+    h2.main-title {
+    font-size: 13px;
+}    p.des-cart {
+        color: #000000a8;
+        font-size: 8px;
+    }
+.button {
+        padding: 9px 8px;
+        font-size: 8px;
+    }
+.num-box {
+    width: 57px;
+    height: 34px;
+ 
+}
+}
+  
+    @media (max-width: 390px) {
+    .cart {
+        width: 142px;
+ 
+    }
+        .image-cart {
+        width: 116px;
+    }
+    h2.main-title {
+    font-size: 13px;
+}    p.des-cart {
+        color: #000000a8;
+        font-size: 8px;
+    }
+.button {
+        padding: 9px 8px;
+        font-size: 8px;
+    }
+.num-box {
+    width: 57px;
+    height: 34px;
+ 
+}
+}
+.\31 box {
+    display: flex
+    ;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.list-of-mnu {
+    display: flex
+    ;
+    align-items: center;
+    justify-content: space-around;
+}
+.\31 box a{
+   color: #ffffff94;
+}
