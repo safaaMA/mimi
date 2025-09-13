@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    
+}
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+.gallery {
+    display: flex
+;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.main-image {
+    flex: 3;
+    width: 100%;
+ 
+}
+    .main-image img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .thumbnails {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 100px;
+    }
+    .thumbnails img {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      transition: 0.3s;
+    }
+    .thumbnails img:hover {
+      border: 2px solid #007bff;
+    }
+
+    .details h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+.details p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+    .price2 {
+      font-size: 22px;
+      margin: 15px 0;
+      color: #e60023;
+    }
+
+    .actions {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .num-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+      width: 120px;
+    }
+    .num-box2 .input {
+      width: 50px;
+      text-align: center;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+ .num-box2 .mns {
+    background: #413939;
+    border: none;
+    cursor: pointer;
+ 
+    font-size: 18px;
+}
+
+    .mns {
+      padding: 12px 25px;
+      border: none;
+      background: #007bff;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .mns:hover {
+      background: #0056b3;
+    }
+
+    /* 📱 موبايل */
+    @media (max-width: 768px) {
+      .gallery {
+        flex-direction: column;
+      }
+      .thumbnails {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .thumbnails img {
+        width: 80px;
+      }
+      .details h1 {
+        font-size: 22px;
+      }
+      .price {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .mns {
+        width: 100%;
+        text-align: center;
+      }
+      .actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    .num-box2 {
+        width: 29%;
+        justify-content: center;
+    }
+    }
+ .num-box2 {
+    width: 29%;
+    display: flex
+;
+    justify-content: flex-start;
+}

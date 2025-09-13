@@ -37,6 +37,7 @@ a {
 ;
     align-items: center;
     justify-content: space-evenly;
+ 
 }
 .navTow {
     display: flex
@@ -44,6 +45,7 @@ a {
     justify-content: space-between;
     padding: 0px 7px;
     margin: 0 0 0px 6px;
+
 }
 i.fa-solid.fa-cart-shopping , i.fa-solid.fa-magnifying-glass,i.fa-solid.fa-bars-staggered {
     font-size: 24px;
@@ -59,7 +61,7 @@ i.fa-solid.fa-cart-shopping {
     margin: 0 10px;
     overflow: hidden;
     border-radius: 15px;
-    height: 180px;
+    height: auto;
 }
 
     .slides {
@@ -433,4 +435,171 @@ background-color: #fff;
 }
 .\31 box a{
    color: #ffffff94;
+}
+ 
+.title-cart-box {
+    font-size: 10px;
+    text-align: center;
+    margin: 9px 0px;
+    display: flex
+;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+/* .cart-box {
+    position: absolute;
+    background: aliceblue;
+    height: 100vh;
+    width: 281px;
+
+    z-index: 1000;
+    box-shadow: -9px 20px 20px 0px #000000;
+} */
+.black-shado {
+    position: absolute;
+    background: #000000bf;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+i.fa-regular.fa-circle-xmark {
+    font-size: 24px;
+}
+.t-t {
+    font-size: 9px;
+}
+
+.cart-box {
+  position: fixed;
+  /* top: 0; */
+  left: -400px; /* مخفية يمين الشاشة */
+    width: 273px;
+
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+.cart-box.active {
+  left: 0;  /* تظهر من اليسار */
+}
+
+.black-shado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgb(0 0 0 / 76%);
+  display: none;
+  z-index: 1000;
+}
+
+.black-shado.active {
+  display: block;
+}
+.menu-box {
+  position: fixed;
+  /* top: 0; */
+  left: -300px;   /* تبدأ مخفية من اليسار */
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease-in-out;
+  z-index: 1002;
+  padding: 8px;
+}
+
+.menu-box.active {
+  left: 0;  /* تظهر من اليسار */
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.menu-links li {
+  margin: 15px 0;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.close-menu {
+  text-align: left;
+  cursor: pointer;
+  font-size: 22px;
+}
+.title-menu-box {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.menu-links {
+    list-style: none;
+    padding: 0px 6px;
+    margin-top: 20px;
+    text-align: end;
+}
+.search-box {
+  position: fixed;
+  top: -200px; /* مخفي فوق */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: top 0.3s ease-in-out;
+  z-index: 1002;
+  border-radius: 8px;
+}
+
+.search-box.active {
+  top: 50px; /* يهبط لتحت */
+}
+
+.search-content {
+  display: flex;
+  gap: 10px;
+}
+
+.search-content input {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: end;
+}
+.search-content button {
+  padding: 10px 15px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.title-search-box {
+    display: flex
+;
+    font-size: 9px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0px 0px 16px 0px;
+}
+h2.main-title {
+    color: #7d3f89;
 }

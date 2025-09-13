@@ -85,3 +85,85 @@ function getPositionX(event) {
       if (!isNaN(min) && Number(input.value) < min) input.value = min;
     }
   }
+ 
+  const cartIcon = document.querySelector('.cartIcon');
+  const cartBox = document.querySelector('.cart-box');
+  const blackShado = document.querySelector('.black-shado');
+  const closeBtn = document.querySelector('.close');
+
+  // فتح السلة
+  cartIcon.addEventListener('click', () => {
+    cartBox.classList.add('active');
+    blackShado.classList.add('active');
+  });
+
+  // إغلاق السلة
+  closeBtn.addEventListener('click', () => {
+    cartBox.classList.remove('active');
+    blackShado.classList.remove('active');
+  });
+
+  // إغلاق عند الضغط على الخلفية السوداء
+  blackShado.addEventListener('click', () => {
+    cartBox.classList.remove('active');
+    blackShado.classList.remove('active');
+  });
+ 
+ 
+  const listIcon = document.querySelector('.listIcon');
+  const menuBox = document.querySelector('.menu-box');
+  const closeMenu = document.querySelector('.close-menu');
+  const blackShado2 = document.querySelector('.black-shado'); // نفس الخلفية
+
+  // فتح القائمة
+  listIcon.addEventListener('click', () => {
+    menuBox.classList.add('active');
+    blackShado2.classList.add('active');
+  });
+
+  // غلق القائمة
+  closeMenu.addEventListener('click', () => {
+    menuBox.classList.remove('active');
+    blackShado2.classList.remove('active');
+  });
+
+  // غلق عند الضغط على الخلفية السوداء
+  blackShado2.addEventListener('click', () => {
+    menuBox.classList.remove('active');
+    blackShado2.classList.remove('active');
+  });
+ 
+
+ 
+  const searchIcon = document.querySelector('.serchIcon');
+  const searchBox = document.querySelector('.search-box');
+  const closeSearch = document.querySelector('.close-search');
+  const blackShado3 = document.querySelector('.black-shado'); // نفس الخلفية
+
+  // فتح البحث
+  searchIcon.addEventListener('click', () => {
+    searchBox.classList.add('active');
+    blackShado3.classList.add('active');
+  });
+
+  // غلق البحث
+  closeSearch.addEventListener('click', () => {
+    searchBox.classList.remove('active');
+    blackShado3.classList.remove('active');
+  });
+
+  // غلق عند الضغط على الخلفية
+  blackShado3.addEventListener('click', () => {
+    searchBox.classList.remove('active');
+    blackShado3.classList.remove('active');
+  });
+ 
+    function changeImage(el) {
+      document.getElementById("mainImg").src = el.src;
+    }
+
+    function step(val) {
+      let input = document.getElementById("numInput");
+      let newVal = parseInt(input.value) + val;
+      if(newVal >= 1) input.value = newVal;
+    }

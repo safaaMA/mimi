@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="icon" href="./logo.JPEG" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6c84e23e68.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style_prodect.css">
+  <link rel="stylesheet" href="style.css">
+  <title>تفاصيل المنتج</title>
+
+</head>
+<body>   
+     <div class="top-nav"  style="flex-direction: row-reverse;">
+    <div class="log">
+      <a href="">
+        تسجيل دخول <span><i class="fa-regular fa-circle-user"></i></span>
+      </a>
+    </div>
+    <div class="log">
+      <a href="">
+        تسجيل <span><i class="fa-solid fa-right-to-bracket"></i></span>
+      </a>
+    </div>
+  </div> 
+<div class="navTow" style="flex-direction: row-reverse;">
+    <div class="left-nav" style="flex-direction: row-reverse;" >
+        <div class="cartIcon"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="serchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="listIcon"><i class="fa-solid fa-bars-staggered"></i></div>
+    </div>
+    <div class="right-naf">
+        <div class="logo"><img src="./logo.png" alt=""></div>
+    </div>
+    <div class="cart-box">
+        <div class="title-cart-box">
+           <div class="t-t">
+               <h1>سلة المشتريات</h1>
+           </div>
+           <div class="close">
+           <i class="fa-regular fa-circle-xmark"></i>
+           </div>
+
+        </div>
+    </div>
+    <div class="black-shado"></div>
+    <div class="menu-box">
+  <div class="title-menu-box">
+    <div class="t-t">
+      <h1>القائمة</h1>
+    </div>
+    <div class="close-menu">
+      <i class="fa-regular fa-circle-xmark"></i>
+    </div>
+  </div>
+
+  <ul class="menu-links">
+    <li><a href="#">الرئيسية</a></li>
+    <li><a href="#">المنتجات</a></li>
+    <li><a href="#">عروض</a></li>
+    <li><a href="#">تواصل معنا</a></li>
+  </ul>
+</div>
+<div class="search-box">
+  <div class="title-search-box">
+    <div class="t-t-s">
+      <h1>البحث</h1>
+    </div>
+    <div class="close-search">
+      <i class="fa-regular fa-circle-xmark"></i>
+    </div>
+  </div>
+  <div class="search-content">
+    <input type="text" placeholder="اكتب ما تبحث عنه..." />
+    <button>بحث</button>
+  </div>
+</div>
+</div>
+  <div class="container">
+
+    <!-- معرض الصور -->
+    <div class="gallery">
+      <div class="main-image">
+        <img id="mainImg" src="./pro2.jpg" alt="صورة المنتج">
+      </div>
+      <div class="thumbnails">
+        <img src="./pro3.jpg" onclick="changeImage(this)">
+        <img src="./pro2.jpg" onclick="changeImage(this)">
+        <img src="./pro.jpg" onclick="changeImage(this)">
+      </div>
+    </div>
+
+
+    <div class="details">
+      <h1>ماوس باد</h1>
+      <p>
+        ماوس باد أصلي لون أبيض الطول 60 سم والعرض 20 سم فيتنامي.  
+        مصنوع من مواد عالية الجودة لضمان أفضل تجربة استخدام أثناء اللعب أو العمل.
+      </p>
+      <div class="price2">15,000 <span>د.ع</span></div>
+
+      <div class="actions">
+        <!-- عداد -->
+        <div class="num-box2">
+          <button class="mns" onclick="step(-1)">-</button>
+          <input class="input" id="numInput" type="number" min="1" value="1">
+          <button button class="mns" onclick="step(1)">+</button>
+        </div>
+
+        <!-- زر اضافة للسلة -->
+        <button class="button">إضافة للسلة</button>
+      </div>
+    </div>
+
+  </div>
+    <script src="./js.js"></script>
+ 
+</body>
+</html>

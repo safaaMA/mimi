@@ -1,0 +1,111 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    
+}
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 450px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px 25px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 6px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: #0066ff;
+    }
+
+    .btn {
+      width: 100%;
+      background: #0066ff;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #0052cc;
+    }
+
+    .extra {
+      margin-top: 15px;
+      font-size: 14px;
+      text-align: center;
+      color: #555;
+    }
+
+    .extra a {
+      color: #0066ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .extra a:hover {
+      text-decoration: underline;
+    }
+    img{
+        width: 100%;
+    }
+     .logo img {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+    .logo {
+    text-align: center;
+}
